@@ -129,7 +129,14 @@ span {
   50% {
     border-color: transparent; } }
 
+@media (max-width: 760px) {
+  .list li a {
+    margin: 5px;
+    padding: 0; } }
+
 @media (max-width: 768px) {
+  * {
+    overflow: hidden; }
   .showcase-content {
     left: 15%;
     top: 30%;
