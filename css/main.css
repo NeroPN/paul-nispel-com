@@ -74,7 +74,7 @@ img {
   width: 100%; }
 
 .showcase-img-wrap {
-  background: url(../images/me_singapore_3.jpg);
+  background: url(../images/me_singapore_3-min.jpg);
   height: 100vh;
   left: 0;
   background-size: cover;
@@ -128,3 +128,17 @@ span {
 @keyframes caret {
   50% {
     border-color: transparent; } }
+
+@media (max-width: 768px) {
+  .showcase-content {
+    left: 15%;
+    top: 30%;
+    width: 55%; }
+    .showcase-content h1, .showcase-content p {
+      text-shadow: 0 0 10px #333;
+      color: white; }
+    .showcase-content h1 {
+      font-size: 35px; }
+  .showcase-img-wrap:before {
+    background: #000;
+    opacity: 0.2; } }
