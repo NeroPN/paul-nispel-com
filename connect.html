@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Paul Nispel | Connect</title>
+   <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
    <script rel="preload" src="https://kit.fontawesome.com/e5358b6c4d.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="css/portfolio-connect.css">
    <link rel="stylesheet" href="css/main-mobile.css">
@@ -29,14 +30,17 @@
                <p>Also feel free to write directly at <a href="mailto:service.paulnispel@gmail.com">service.paulnispel@gmail.com</a>.</p>
             </div>
             <div class="connect-form-form">
-                  <form action="">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Name">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Email">
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Your project, idea or coffee invitation" style="height:160px"></textarea>
-                  <input class="btn-primary btn" type="submit" id="contact-btn" value="Send">
+                  <form name="contact" method="POST" data-netlify="true">
+                     <label for="name" required="required">Name</label>
+                     <input type="text" id="name" name="name" placeholder="Name" required="required">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email" placeholder="Email" required="required">
+                     <label for="subject">Subject</label>
+                     <textarea id="subject" name="subject" placeholder="Your project, idea or coffee invitation" style="height:160px" required="required"></textarea>
+                     <input type="radio" name="privacypolicy" value="black" required="required">
+                     <label for="privacypolicy" required="required" id="radio-btn-text">I consent that my data is handled as described in the <a href="privacypolicy.html">Privacy Policy</a> and that Paul is allowed to contact me via the email given above.</label>
+                     <input class="btn-primary btn" type="submit" id="contact-btn" value="Send">
+                  </form>
             </div>
          </div>
    </section>

@@ -309,8 +309,16 @@ input[type=text], input[type=email], textarea {
   box-sizing: border-box;
   /* Make sure that padding and width stays in place */ }
 
+input[type=radio] {
+  font-size: 10px; }
+
+#radio-btn-text {
+  font-size: 0.85rem; }
+
 #contact-btn {
   font-size: 1rem;
+  margin-top: 5px;
+  display: block;
   font-family: 'poppins'; }
 
 .header-content {
@@ -411,3 +419,6 @@ input[type=text], input[type=email], textarea {
 @media (max-width: 768px) {
   .workbox p {
     font-size: 9.5px; } }
+
+#imprint-container {
+  margin: 20px auto; }
