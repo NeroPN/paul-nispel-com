@@ -129,18 +129,13 @@ span {
   50% {
     border-color: transparent; } }
 
-@media (max-width: 760px) {
-  .list li a {
-    margin: 5px;
-    padding: 0; } }
-
 @media (max-width: 768px) {
   * {
     overflow: hidden; }
   .showcase-content {
-    left: 15%;
-    top: 30%;
-    width: 55%; }
+    left: 10%;
+    top: 30vh;
+    width: 60%; }
     .showcase-content h1, .showcase-content p {
       text-shadow: 0 0 10px #333;
       color: white; }
@@ -149,3 +144,19 @@ span {
   .showcase-img-wrap:before {
     background: #000;
     opacity: 0.2; } }
+
+@media (max-width: 560px) {
+  .list li a {
+    margin: 5px;
+    padding: 0; }
+  .showcase-content p, a {
+    font-size: 1.1rem; } }
+
+@media (max-width: 400px) {
+  body {
+    overflow: hidden; }
+  .list li a {
+    margin: 5px;
+    padding: 0; }
+  .showcase-content p, a {
+    font-size: 1rem; } }
