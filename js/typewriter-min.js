@@ -1,10 +1,10 @@
 
 
 document.addEventListener('DOMContentLoaded',function(event){
-  
+  setTimeout(() => {
   // array with texts to type in typewriter
   var dataText = ["Hi, I'm Paul."];
-  
+
   // type one text in the typwriter
   // keeps calling itself until the text is finished
   function typeWriter(text, i, fnCallback) {
@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded',function(event){
     
   }
   
+
+  
   // start a typewriter animation for a text in the dataText array
    function StartTextAnimation(i) {
      if (typeof dataText[i] == 'undefined'){
@@ -46,4 +48,8 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   // start the text animation
   StartTextAnimation(0);
+}, 2000);
 });
+
+
+
