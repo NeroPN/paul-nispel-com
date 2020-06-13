@@ -108,6 +108,8 @@ img {
     z-index: -1; }
   .content-bg-1 {
     background: url(../images/goal-written.jpg) no-repeat center center/cover; }
+  .content-bg-2 {
+    background: url(../images/focused.jpg) no-repeat center center/cover; }
 
 .content-preview {
   z-index: 10;
