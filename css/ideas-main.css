@@ -110,6 +110,8 @@ img {
     background: url(../images/goal-written-min.webp) no-repeat center center/cover; }
   .content-bg-2 {
     background: url(../images/focused-min.webp) no-repeat center center/cover; }
+  .content-bg-3 {
+    background: url(../images/willpower_chess_work.webp) no-repeat center center/cover; }
 
 .content-preview {
   z-index: 10;
