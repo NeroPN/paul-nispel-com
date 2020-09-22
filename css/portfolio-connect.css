@@ -204,9 +204,9 @@ img {
 .grid-gallery-hover {
   display: grid;
   position: relative;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 5vw);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 4vw);
+  grid-gap: 1.5rem;
   margin-top: 30px;
   align-items: stretch; }
   .grid-gallery-hover .workbox {
@@ -249,6 +249,7 @@ img {
         height: auto; }
     .grid-gallery-hover .workbox-content {
       position: absolute;
+      font-size: 0.9em;
       top: 0;
       left: 0;
       bottom: 0;
@@ -261,23 +262,31 @@ img {
         transition: opacity 0.5s; }
   .grid-gallery-hover .workbox-1 {
     grid-column: 1 / span 3;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
     position: relative; }
   .grid-gallery-hover .workbox-2 {
-    grid-column: 4 / span 2;
+    grid-column: 7 / span 2;
     grid-row: 1 / span 2;
     position: relative; }
   .grid-gallery-hover .workbox-3 {
-    grid-column: 1 / span 3;
-    grid-row: 4 / span 3;
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
     position: relative; }
   .grid-gallery-hover .workbox-4 {
-    grid-column: 4 / span 2;
+    grid-column: 7 / span 2;
     position: relative;
     grid-row: 3 / span 2; }
   .grid-gallery-hover .workbox-5 {
-    grid-column: 4 / span 2;
+    grid-column: 7 / span 2;
     grid-row: 5 / span 2;
+    position: relative; }
+  .grid-gallery-hover .workbox-6 {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 2;
+    position: relative; }
+  .grid-gallery-hover .workbox-7 {
+    grid-column: 4 / span 3;
+    grid-row: 3 / span 2;
     position: relative; }
 
 .connect-form-section {
@@ -384,7 +393,7 @@ input[type=radio] {
     display: grid;
     position: relative;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(16, 5vw);
+    grid-template-rows: repeat(24, 5vw);
     grid-gap: 1rem;
     margin-top: 30px;
     align-items: stretch; }
@@ -396,31 +405,38 @@ input[type=radio] {
       .grid-gallery-hover .workbox h2, .grid-gallery-hover .workbox h3, .grid-gallery-hover .workbox h4, .grid-gallery-hover .workbox h1 {
         font-size: smaller; }
       .grid-gallery-hover .workbox p {
-        font-size: auto; }
+        font-size: 0.7em; }
     .grid-gallery-hover-content {
       padding: 1rem; }
     .grid-gallery-hover a {
       color: #1e5aad; }
     .grid-gallery-hover .workbox-1 {
-      grid-column: auto;
-      grid-row: 1 / span 5;
+      grid-column: 1 / span 7;
+      grid-row: 1 / span 4;
       position: relative; }
     .grid-gallery-hover .workbox-2 {
-      display: none;
-      grid-column: 0;
-      grid-row: 0;
+      grid-column: 1 / span 7;
+      grid-row: 21 / span 4;
       position: relative; }
     .grid-gallery-hover .workbox-3 {
-      grid-column: auto;
-      grid-row: 6 / span 5;
+      grid-column: 1 / span 7;
+      grid-row: 5 / span 4;
       position: relative; }
     .grid-gallery-hover .workbox-4 {
-      grid-column: auto;
+      grid-column: 1 / span 7;
       position: relative;
-      grid-row: 11 / span 3; }
+      grid-row: 17 / span 4; }
     .grid-gallery-hover .workbox-5 {
-      grid-column: auto;
-      grid-row: 14 / span 3;
+      grid-column: 1 / span 7;
+      grid-row: 17 / span 4;
+      position: relative; }
+    .grid-gallery-hover .workbox-6 {
+      grid-column: 1 / span 7;
+      grid-row: 13 / span 4;
+      position: relative; }
+    .grid-gallery-hover .workbox-7 {
+      grid-column: 1 / span 7;
+      grid-row: 9 / span 4;
       position: relative; } }
 
 @media (max-width: 768px) {
